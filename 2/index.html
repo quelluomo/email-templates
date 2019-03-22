@@ -7,10 +7,12 @@
     <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
     <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
 
     <!-- CSS Reset : BEGIN -->
 <style>
+
 html,
 body {
     margin: 0 auto !important;
@@ -110,14 +112,15 @@ img.g-img + div {
 
 </style>
 
-<!-- CSS Reset : END -->
+    <!-- CSS Reset : END -->
 
-<!-- Progressive Enhancements : BEGIN -->
+    <!-- Progressive Enhancements : BEGIN -->
 <style>
 
-  .primary{
-	background: #0d0cb5;
+.primary{
+	background: #f3a333;
 }
+
 .bg_white{
 	background: #ffffff;
 }
@@ -125,10 +128,16 @@ img.g-img + div {
 	background: #fafafa;
 }
 .bg_black{
-	background: #000000;
+	background: rgba(0,0,0,.8);
+}
+.bg_blue{
+	background: rgba(52, 152, 219);
+}
+.bg_green{
+	background: #006400;
 }
 .bg_dark{
-	background: rgba(0,0,0,.8);
+	background: #0033B9;
 }
 .email-section{
 	padding:2.5em;
@@ -136,34 +145,24 @@ img.g-img + div {
 
 /*BUTTON*/
 .btn{
-	padding: 5px 15px;
-	display: inline-block;
+	padding: 10px 15px;
 }
 .btn.btn-primary{
-	border-radius: 5px;
-	background: #0d0cb5;
+	border-radius: 30px;
+	background: #f3a333;
 	color: #ffffff;
 }
-.btn.btn-white{
-	border-radius: 5px;
-	background: #ffffff;
-	color: #000000;
-}
-.btn.btn-white-outline{
-	border-radius: 5px;
-	background: transparent;
-	border: 1px solid #fff;
-	color: #fff;
-}
+
+
 
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Playfair Display', serif;
 	color: #000000;
 	margin-top: 0;
 }
 
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 1.8;
@@ -171,7 +170,7 @@ body{
 }
 
 a{
-	color: #0d0cb5;
+	color: #f3a333;
 }
 
 table{
@@ -182,50 +181,19 @@ table{
 	margin: 0;
 }
 .logo h1 a{
-	color: #000000;
+	color: #000;
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
-}
-
-.navigation{
-	padding: 0;
-}
-.navigation li{
-	list-style: none;
-	display: inline-block;;
-	margin-left: 5px;
-	font-size: 13px;
-	font-weight: 500;
-}
-.navigation li a{
-	color: rgba(0,0,0,.4);
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*HERO*/
 .hero{
 	position: relative;
-	z-index: 0;
 }
-.hero .overlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	content: '';
-	width: 100%;
-	background: #000000;
-	z-index: -1;
-	opacity: .3;
-}
-.hero .icon{
-}
-.hero .icon a{
-	display: block;
-	width: 60px;
-	margin: 0 auto;
+.hero img{
+
 }
 .hero .text{
 	color: rgba(255,255,255,.8);
@@ -242,11 +210,9 @@ table{
 }
 .heading-section h2{
 	color: #000000;
-	font-size: 20px;
+	font-size: 28px;
 	margin-top: 0;
 	line-height: 1.4;
-	font-weight: 700;
-	text-transform: uppercase;
 }
 .heading-section .subheading{
 	margin-bottom: 20px !important;
@@ -265,7 +231,7 @@ table{
 	content: '';
 	width: 100%;
 	height: 2px;
-	background: #0d0cb5;
+	background: #f3a333;
 	margin: 0 auto;
 }
 
@@ -273,7 +239,8 @@ table{
 	color: rgba(255,255,255,.8);
 }
 .heading-section-white h2{
-	font-family: 
+	font-size: 28px;
+	font-family:
 	line-height: 1;
 	padding-bottom: 0;
 }
@@ -298,38 +265,12 @@ table{
 
 
 /*SERVICES*/
-.services{
-	background: rgba(0,0,0,.03);
-}
 .text-services{
-	padding: 10px 10px 0; 
+	padding: 10px 10px 0;
 	text-align: center;
 }
 .text-services h3{
-	font-size: 16px;
-	font-weight: 600;
-}
-
-.services-list{
-	padding: 0;
-	margin: 0 0 20px 0;
-	width: 100%;
-	float: left;
-}
-
-.services-list img{
-	float: left;
-}
-.services-list .text{
-	width: calc(100% - 60px);
-	float: right;
-}
-.services-list h3{
-	margin-top: 0;
-	margin-bottom: 0;
-}
-.services-list p{
-	margin: 0;
+	font-size: 20px;
 }
 
 /*BLOG*/
@@ -374,23 +315,6 @@ table{
 
 
 /*COUNTER*/
-.counter{
-	width: 100%;
-	position: relative;
-	z-index: 0;
-}
-.counter .overlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	content: '';
-	width: 100%;
-	background: #000000;
-	z-index: -1;
-	opacity: .3;
-}
 .counter-text{
 	text-align: center;
 }
@@ -443,6 +367,7 @@ table{
 	}
 
 }
+
 </style>
 
 
@@ -457,39 +382,17 @@ table{
     	<!-- BEGIN BODY -->
       <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
       	<tr>
-          <td valign="top" class="bg_white" style="padding: 1em 2.5em;">
-          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-          		<tr>
-          			<td width="40%" class="logo" style="text-align: left;">
-			            <h1><a href="#">Corporate</a></h1>
-			          </td>
-			          <td width="60%" class="logo" style="text-align: right;">
-			            <ul class="navigation">
-			            	<li><a href="#">Home</a></li>
-			            	<li><a href="#">About</a></li>
-			            	<li><a href="#">Works</a></li>
-			            	<li><a href="#">Blog</a></li>
-			            	<li><a href="#">Contact</a></li>
-			            </ul>
-			          </td>
-          		</tr>
-          	</table>
+          <td class="bg_white logo" style="padding: 1em 2.5em; text-align: center">
+            <h1><a href="http://therainforestcafe.co.uk/" target="_blank"><img src="http://therainforestcafe.co.uk/wp-content/uploads/2017/02/Rainforest_Cafe_Logo.png" alt="rainforest_logo"  style=" max-width: 600px; height: auto; margin: auto; display: block;"></h1>
           </td>
 	      </tr><!-- end tr -->
 				<tr>
-          <td valign="middle" class="hero bg_white" style="background-image: url(images/bg_1.jpg); background-size: cover; height: 400px;">
-          	<div class="overlay"></div>
+          <td valign="middle" class="hero" style="background-image: url(http://therainforestcafe.co.uk/wp-content/uploads/2016/07/rainforest_london_interior-02.jpg); background-size: cover; height: 400px;">
             <table>
             	<tr>
             		<td>
             			<div class="text" style="padding: 0 3em; text-align: center;">
-            				<h2>We Create Modern Website</h2>
-            				<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-            				<div class="icon">
-	            				<a href="#">
-	                      <img src="images/002-play-button.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
-	                    </a>
-	                  </div>
+            				<h2><a href="http://therainforestcafe.co.uk/" target="_blank">Rainforest Cafe</a></h2>
             			</div>
             		</td>
             	</tr>
@@ -500,54 +403,53 @@ table{
 		      <td class="bg_white">
 		        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 		          <tr>
+		            <td class="bg_green email-section" style="text-align:center;">
+		            	<div class="heading-section heading-section-white">
+		            		<span class="subheading">Welcome</span>
+		              	<h2>GET WILD!</h2>
+		              	<p>Located in the heart of the West End at Piccadilly Circus since 1997, Rainforest Cafe is designed as an exotic jungle that recreates the sights and sounds of the Amazon rainforest.
+This spectacular dining experience enables guests to enjoy great food and drinks whilst the unique jungle surroundings are brought to life with the help of stunning special effects and lifelike animatronics.
+Be amazed as all around you there are tropical showers, cascading waterfalls and periodic thunderstorms. Prepare to be delighted as you explore the whole restaurant and get close to the magnificent rainforest animals, including elephants, jaguars, crocodiles, gorillas, mechanical butterflies and orangutans.
+Great for all the family, Rainforest Cafe has an extensive menu of American and International cuisine catering for both adults and children. Food on offer includes steaks, burgers, pasta and salads as well as delicious desserts.
+We look forward to welcoming you soon!</p>
+		            	</div>
+		            </td>
+		          </tr><!-- end: tr -->
+		          <tr>
 		            <td class="bg_white email-section">
 		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Our Services</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+		            		<span class="subheading">Parties and events</span>
+		              	<h2>GET READY!</h2>
+		              	<p>Rainforest Cafe specialises in accommodating large groups and offers an exceptional Central London location in the heart of the West End, close to all theatres and major London attractions. Especially popular with school groups, social clubs or small departmental work occasions, we would be delighted to discuss your exact requirements.</p>
 		            	</div>
 		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 		            		<tr>
-		            			<td valign="top" width="33.333%" style="padding-top: 20px;" class="services">
+                      <td valign="top" width="50%" style="padding-top: 20px;">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                           <tr>
                             <td class="icon">
-                              <img src="images/001-diet.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
+                              <img src="http://therainforestcafe.co.uk/wp-content/uploads/2019/03/001-diet.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
                             </td>
                           </tr>
                           <tr>
                             <td class="text-services">
-                            	<h3>Branding</h3>
-                             	<p>Far far away, behind the word mountains, far from the countries</p>
+                            	<h3>Great Food</h3>
+                             	<p>We're experts at serving excellent food and creating plenty of fun, two key ingredients in making your event a success. </p>
                             </td>
                           </tr>
                         </table>
                       </td>
-                      <td valign="top" width="33.333%" style="padding-top: 20px; background: rgba(0,0,0,.08);" class="services">
+                      <td valign="top" width="50%" style="padding-top: 20px;">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                           <tr>
                             <td class="icon">
-                              <img src="images/001-diet.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
+                              <img src="http://therainforestcafe.co.uk/wp-content/uploads/2019/03/003-recipe-book.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
                             </td>
                           </tr>
                           <tr>
                             <td class="text-services">
-                            	<h3>Design</h3>
-                             	<p>Far far away, behind the word mountains, far from the countries</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="33.333%" style="padding-top: 20px;" class="services">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="icon">
-                              <img src="images/003-recipe-book.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services">
-                            	<h3>Development</h3>
-                              <p>Far far away, behind the word mountains, far from the countries</p>
+                            	<h3>Great People</h3>
+                              <p>A friendly, fun, and unique atmosphere we guarantee you won't find anywhere else, and our great service will make your experience truly unforgettable.</p>
                             </td>
                           </tr>
                         </table>
@@ -557,79 +459,79 @@ table{
 		            </td>
 		          </tr><!-- end: tr -->
 		          <tr>
-		            <td class="bg_light email-section" style="width: 100%;">
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            <td class="bg_light email-section" style="text-align:center;">
+		            	<table>
 		            		<tr>
-		            			<td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/about.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="text-services" style="text-align: left; padding-left:25px;">
-                            	<div class="heading-section">
-								              	<h2>Business Strategy</h2>
-								              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-								              	<p><a href="#" class="btn btn-primary">Read more</a></p>
-								            	</div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
+		            			<td class="img">
+		            				<table>
+		            					<tr>
+		            						<td>
+		            							<img src="http://therainforestcafe.co.uk/wp-content/uploads/2017/03/rainforest-london-dish-hamburger.jpg" width="600" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;" class="g-img">
+		            						</td>
+		            					</tr>
+		            				</table>
+		            				<div class="icon">
+			            				<a href="#">
+		                        <!-- <img src="images/002-play-button.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;"> -->
+		                      </a>
+	                      </div>
+		            			</td>
+		            		</tr>
+		            		<tr>
+                      <td class="bg_white email-section">
+      		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
+      		            		<span class="subheading">Menu</span>
+      		              	<h2>GET HUNGRY!</h2>
+      		              	<p>Rainforest Cafe has an extensive menu of American and International cuisine catering for both adults and children.</p>
+      		            	</div>
+		            			</td>
+		            		</tr>
 		            	</table>
 		            </td>
 		          </tr><!-- end: tr -->
 		          <tr>
 		            <td class="bg_white email-section">
 		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Projects</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+		            		<span class="subheading">Location</span>
+		              	<h2>GET AMAZED!</h2>
+		              	<p>Organising a product launch, breakfast event, corporate or even Christmas party, but looking for an unusual and different venue? Then look no further than Rainforest Cafe London!
+Whether your event is corporate or private, our experienced and dedicated events team are on hand to aide and advise you on every aspect of your event including food, drinks and entertainment. We offer breakfast, sit down and canape menus, as well as happy to bespoke a menu or offer working to a specific brief and budget.</p>
 		            	</div>
 		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 		            		<tr>
-                      <td valign="top" width="50%">
+                      <td valign="top" width="50%" style="padding-top: 20px;">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                           <tr>
-                            <td style="padding-top: 20px; padding-right: 10px;">
-                              <a href="#"><img src="images/work-1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+                            <td style="padding-right: 10px;">
+                              <img src="http://therainforestcafe.co.uk/wp-content/uploads/2016/07/xmas-party-rainforest.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-services" style="text-align: center;">
+                            	<h3>Great Ambience <br> </h3>
+                             	<p>Rainforest Cafe specialises in accommodating large groups and offers an exceptional Central London location in the heart of the West End, close to all theatres and major London attractions. Especially popular with school groups, social clubs or small departmental work occasions, we would be delighted to discuss your exact requirements.</p>
+                             	<!--<p><a href="#" class="btn btn-primary">Read more</a></p>-->
                             </td>
                           </tr>
                         </table>
                       </td>
-                      <td valign="top" width="50%">
+                      <td valign="top" width="50%" style="padding-top: 20px;">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                           <tr>
-                            <td style="padding-top: 20px; padding-left: 10px;">
-                              <a href="#"><img src="images/work-2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+                            <td style="padding-left: 10px;">
+                              <img src="http://therainforestcafe.co.uk/wp-content/uploads/2017/03/rainforest-london-interior-07.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
                             </td>
                           </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-                      <td valign="top" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                           <tr>
-                            <td style="padding-top: 20px; padding-right: 10px;">
-                              <a href="#"><img src="images/work-3.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td style="padding-top: 20px; padding-left: 10px;">
-                              <a href="#"><img src="images/work-4.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+                            <td class="text-services" style="text-align: center;">
+                            	<h3>Just for you (and 599 friends)</h3>
+                              <p><b>Capacity</b><br>
+                                  <b>Exclusive Hire based over two floors:</b> <br>355 seated / 600 standing<br>
+                                  <b>Atlas Area:</b> <br>170 seated / 350 standing<br>
+                                  <b>Starscape Area:</b> <br>45 seated / 75 standing<br>
+                                  <b>Forest Floor:</b> <br>80-100 seated / 125 standing<br>
+                                  <b>Butterfly Room:</b> <br>25-30 seated / 35 standing</p>
+                              <!--<p><a href="#" class="btn btn-primary">Read more</a></p>-->
                             </td>
                           </tr>
                         </table>
@@ -639,209 +541,7 @@ table{
 		            </td>
 		          </tr><!-- end: tr -->
 
-		          <tr>
-			          <td valign="middle" class="counter" style="background-image: url(images/bg_1.jpg); background-size: cover; padding: 4em 0;">
-			          	<div class="overlay"></div>
-			            <table>
-			            	<tr>
-			            		<td valign="middle" width="33.333%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="counter-text">
-                            	<span class="num">20</span>
-                            	<span class="name">Clients</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="33.333%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="counter-text">
-                            	<span class="num">1200</span>
-                            	<span class="name">Projects</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="33.333%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="counter-text">
-                            	<span class="num">100</span>
-                            	<span class="name">Coffee Cups</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-			            	</tr>
-			            </table>
-			          </td>
-				      </tr><!-- end tr -->
-				      <tr>
-		            <td class="bg_white email-section">
-		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Our Blog</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-		            	</div>
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-                      <td valign="top" width="50%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="10" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/blog-1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services" style="text-align: left;">
-                            	<p class="meta"><span>Posted on Feb 18, 2019</span> <span>Food</span></p>
-                            	<h3>Business Key to Success</h3>
-                             	<p>Far far away, behind the word mountains, far from the countries</p>
-                             	<p><a href="#" class="btn btn-primary">Read more</a></p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="50%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="10" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/blog-2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services" style="text-align: left;">
-                            	<p class="meta"><span>Posted on Feb 18, 2019</span> <span>Food</span></p>
-                            	<h3>Web Design Technique</h3>
-                              <p>Far far away, behind the word mountains, far from the countries</p>
-                              <p><a href="#" class="btn btn-primary">Read more</a></p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
-		          <tr>
-		            <td class="bg_light email-section">
-		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Our Team</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-		            	</div>
-		            	<table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%">
-		            		<tr>
-                      <td valign="top" width="33.333%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/person_1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-testimony" style="text-align: center;">
-                            	<h3 class="name">Ronald Tuff</h3>
-                            	<span class="position">Businessman</span>
-                             	<p>Far far away, behind the word mountains</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="33.333%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/person_2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-testimony" style="text-align: center;">
-                            	<h3 class="name">Willam Clarson</h3>
-                            	<span class="position">Businessman</span>
-                              <p>Far far away, behind the word mountains</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="33.333%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/person_3.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-testimony" style="text-align: center;">
-                            	<h3 class="name">Willam Clarson</h3>
-                            	<span class="position">Businessman</span>
-                              <p>Far far away, behind the word mountains</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
-		          <tr>
-		            <td class="bg_white email-section" style="width: 100%;">
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-		            			<td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/bg_2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="text-services" style="text-align: left; padding-left:25px;">
-                            	<div class="heading-section">
-								              	<h2>Our Features</h2>
-								            	</div>
-								            	<div class="services-list">
-								            		<img src="images/checked.png" alt="" style="width: 50px; max-width: 600px; height: auto; display: block;">
-								            		<div class="text">
-								            			<h3>Responsive</h3>
-								            			<p>A small river named Duden flows by their</p>
-								            		</div>
-								            	</div>
-								            	<div class="services-list">
-								            		<img src="images/checked.png" alt="" style="width: 50px; max-width: 600px; height: auto; display: block;">
-								            		<div class="text">
-								            			<h3>Responsive</h3>
-								            			<p>A small river named Duden flows by their</p>
-								            		</div>
-								            	</div>
-								            	<div class="services-list">
-								            		<img src="images/checked.png" alt="" style="width: 50px; max-width: 600px; height: auto; display: block;">
-								            		<div class="text">
-								            			<h3>Responsive</h3>
-								            			<p>A small river named Duden flows by their</p>
-								            		</div>
-								            	</div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
-		          <tr>
-		            <td class="primary email-section" style="text-align:center;">
-		            	<div class="heading-section heading-section-white">
-		              	<h2>Get Ready For Modern Design</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		              	<p><a href="#" class="btn btn-white-outline">Get Started</a></p>
-		            	</div>
-		            </td>
-		          </tr><!-- end: tr -->
+
 		        </table>
 
 		      </td>
@@ -850,15 +550,15 @@ table{
       </table>
       <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
       	<tr>
-          <td valign="middle" class="bg_black footer email-section">
+          <td valign="middle" class="bg_green footer email-section">
             <table>
             	<tr>
                 <td valign="top" width="33.333%" style="padding-top: 20px;">
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
                       <td style="text-align: left; padding-right: 10px;">
-                      	<h3 class="heading">About</h3>
-                      	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                      	<h3 class="heading">Get in touch</h3>
+                      	<p>For more information on our menus and availability, please email us on <a href="sales@bubbagumpshrimp.co.uk">sales@bubbagumpshrimp.co.uk</a></p>
                       </td>
                     </tr>
                   </table>
@@ -869,28 +569,13 @@ table{
                       <td style="text-align: left; padding-left: 5px; padding-right: 5px;">
                       	<h3 class="heading">Contact Info</h3>
                       	<ul>
-					                <li><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-					                <li><span class="text">+2 392 3929 210</span></a></li>
+					                <li><span class="text">13 Coventry Street<br>London W1D 7AB<br>020 3763 5288</span></li>
 					              </ul>
                       </td>
                     </tr>
                   </table>
                 </td>
-                <td valign="top" width="33.333%" style="padding-top: 20px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-left: 10px;">
-                      	<h3 class="heading">Useful Links</h3>
-                      	<ul>
-					                <li><a href="#">Home</a></li>
-					                <li><a href="#">About</a></li>
-					                <li><a href="#">Services</a></li>
-					                <li><a href="#">Work</a></li>
-					              </ul>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
+
               </tr>
             </table>
           </td>
@@ -899,11 +584,11 @@ table{
         	<td valign="middle" class="bg_black footer email-section">
         		<table>
             	<tr>
-                <td valign="top" width="33.333%">
+                <td style="text-align: center; valign="top" width="100.00%;">
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
-                      <td style="text-align: left; padding-right: 10px;">
-                      	<p>&copy; 2018 Corporate. All Rights Reserved</p>
+                      <td style="text-align: center; padding-right: 10px;">
+                      	<p>	You have received this e-mail because you opted in to get deals, offers and information from selected companies that work with Group Leisure & Travel magazine. If you'd rather not receive these type of e-mails you can update your preferences or unsubscribe here. <br> To see our full privacy policy click <a href="https://www.yandellmedia.com/privacy-policy/">here</a>. Should you wish to contact us about your data and what we send you, please telephone our circulation and subscriptions department on 01908 613323 or e-mail <a href="subs@yandellmedia.com">subs@yandellmedia.com</a>. <br> <br>Yandell Publishing Ltd, PO Box 5122, Milton Keynes MK15 8ZP. <br>Registered No. 1975794.</p>
                       </td>
                     </tr>
                   </table>
@@ -911,9 +596,7 @@ table{
                 <td valign="top" width="33.333%">
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
-                      <td style="text-align: right; padding-left: 5px; padding-right: 5px;">
-                      	<p><a href="#" style="color: rgba(255,255,255,.4);">Unsubcribe</a></p>
-                      </td>
+
                     </tr>
                   </table>
                 </td>
