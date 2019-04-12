@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
     <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
     <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Granaio London -->
 
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
 
     <!-- CSS Reset : BEGIN -->
-    <style>
+<style>
 
-        html,
+html,
 body {
     margin: 0 auto !important;
     padding: 0 !important;
@@ -109,16 +110,17 @@ img.g-img + div {
     }
 }
 
-    </style>
+</style>
 
     <!-- CSS Reset : END -->
 
     <!-- Progressive Enhancements : BEGIN -->
-    <style>
+<style>
 
-	    .primary{
-	background: #2f89fc;
+.primary{
+	background: #f3a333;
 }
+
 .bg_white{
 	background: #ffffff;
 }
@@ -126,10 +128,16 @@ img.g-img + div {
 	background: #fafafa;
 }
 .bg_black{
-	background: #000000;
+	background: rgba(0,0,0,.8);
+}
+.bg_blue{
+	background: rgba(52, 152, 219);
 }
 .bg_dark{
-	background: rgba(0,0,0,.8);
+	background: #0033B9;
+}
+.bg_brown{
+	background: #5F3718;
 }
 .email-section{
 	padding:2.5em;
@@ -137,35 +145,24 @@ img.g-img + div {
 
 /*BUTTON*/
 .btn{
-	padding: 5px 15px;
-	display: inline-block;
+	padding: 10px 15px;
 }
 .btn.btn-primary{
-	border-radius: 5px;
-	background: #2f89fc;
+	border-radius: 30px;
+	background: #f3a333;
 	color: #ffffff;
 }
-.btn.btn-white{
-	border-radius: 5px;
-	background: #ffffff;
-	color: #000000;
-}
-.btn.btn-white-outline{
-	border-radius: 5px;
-	background: transparent;
-	border: 1px solid #fff;
-	color: #fff;
-}
+
+
 
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Playfair Display', serif;
 	color: #000000;
 	margin-top: 0;
-	font-weight: 400;
 }
 
 body{
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 1.8;
@@ -173,7 +170,7 @@ body{
 }
 
 a{
-	color: #2f89fc;
+	color: #f3a333;
 }
 
 table{
@@ -184,45 +181,27 @@ table{
 	margin: 0;
 }
 .logo h1 a{
-	color: #000000;
+	color: #000;
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
-}
-
-.navigation{
-	padding: 0;
-}
-.navigation li{
-	list-style: none;
-	display: inline-block;;
-	margin-left: 5px;
-	font-size: 13px;
-	font-weight: 500;
-}
-.navigation li a{
-	color: rgba(0,0,0,.4);
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*HERO*/
 .hero{
 	position: relative;
-	z-index: 0;
 }
+.hero img{
 
+}
 .hero .text{
-	color: rgba(0,0,0,.3);
+	color: rgba(255,255,255,.8);
 }
 .hero .text h2{
-	color: #000;
+	color: #ffffff;
 	font-size: 30px;
 	margin-bottom: 0;
-	font-weight: 300;
-}
-.hero .text h2 span{
-	font-weight: 600;
-	color: #2f89fc;
 }
 
 
@@ -234,7 +213,6 @@ table{
 	font-size: 28px;
 	margin-top: 0;
 	line-height: 1.4;
-	font-weight: 400;
 }
 .heading-section .subheading{
 	margin-bottom: 20px !important;
@@ -253,7 +231,7 @@ table{
 	content: '';
 	width: 100%;
 	height: 2px;
-	background: #2f89fc;
+	background: #f3a333;
 	margin: 0 auto;
 }
 
@@ -261,7 +239,8 @@ table{
 	color: rgba(255,255,255,.8);
 }
 .heading-section-white h2{
-	font-family: 
+	font-size: 28px;
+	font-family:
 	line-height: 1;
 	padding-bottom: 0;
 }
@@ -277,16 +256,80 @@ table{
 	color: rgba(255,255,255,.4);
 }
 
-/*PROJECT*/
-.text-project{
-	padding-top: 10px;
+
+.icon{
+	text-align: center;
 }
-.text-project h3{
-	margin-bottom: 0;
+.icon img{
 }
-.text-project h3 a{
-	color: #000;
+
+
+/*SERVICES*/
+.text-services{
+	padding: 10px 10px 0;
+	text-align: center;
 }
+.text-services h3{
+	font-size: 20px;
+}
+
+/*BLOG*/
+.text-services .meta{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+/*TESTIMONY*/
+.text-testimony .name{
+	margin: 0;
+}
+.text-testimony .position{
+	color: rgba(0,0,0,.3);
+
+}
+
+
+/*VIDEO*/
+.img{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.img .icon{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: -25px;
+}
+.img .icon a{
+	display: block;
+	width: 60px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -25px;
+}
+
+
+
+/*COUNTER*/
+.counter-text{
+	text-align: center;
+}
+.counter-text .num{
+	display: block;
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: 700;
+}
+.counter-text .name{
+	display: block;
+	color: rgba(255,255,255,.9);
+	font-size: 13px;
+}
+
 
 /*FOOTER*/
 
@@ -313,11 +356,19 @@ table{
 
 @media screen and (max-width: 500px) {
 
+	.icon{
+		text-align: left;
+	}
+
+	.text-services{
+		padding-left: 0;
+		padding-right: 20px;
+		text-align: left;
+	}
 
 }
 
-
-    </style>
+</style>
 
 
 </head>
@@ -331,23 +382,17 @@ table{
     	<!-- BEGIN BODY -->
       <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
       	<tr>
-          <td valign="top" class="bg_white" style="padding: 1em 2.5em;">
-          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-          		<tr>
-          			<td class="logo" style="text-align: center;">
-			            <h1><a href="#">Agency</a></h1>
-			          </td>
-          		</tr>
-          	</table>
+          <td class="bg_white logo" style="padding: 1em 2.5em; text-align: center">
+            <h1><a href="http://ristorantegranaio.co.uk/" target="_blank"><img src="http://ristorantegranaio.co.uk/wp-content/uploads/2017/05/logo-granaio-londra-dark.png" alt="granaio_logo"  style=" max-width: 500px; height: auto; margin: auto; display: block;"></h1>
           </td>
 	      </tr><!-- end tr -->
 				<tr>
-          <td valign="middle" class="hero hero-2 bg_white" style="padding: 4em 0;">
+          <td valign="middle" class="hero" style="background-image: url(http://therainforestcafe.co.uk/wp-content/uploads/2019/04/IMG_9213.jpg); background-size: cover; height: 480px;">
             <table>
             	<tr>
             		<td>
             			<div class="text" style="padding: 0 3em; text-align: center;">
-            				<h2>We Are Portfolio Agency, We Create <span>Functional</span> &amp; <span>Beautiful</span> Website</h2>
+            				<h2><a href="http://ristorantegranaio.co.uk/" target="_blank"></a></h2>
             			</div>
             		</td>
             	</tr>
@@ -358,183 +403,183 @@ table{
 		      <td class="bg_white">
 		        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 		          <tr>
-		            <td class="bg_white email-section">
-		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Projects</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+		            <td class="bg_brown email-section" style="text-align:center;">
+		            	<div class="heading-section heading-section-white">
+		            		<span class="subheading">Benvenuti!</span>
+		              	<h2>Like Grandma's House</h2>
+		              	<p>Rustic Italian food that will make you feel right at home.<br>The fragrance and taste of dishes made with love and care by our chefs.
+                    <br>A stunning venue with beautifully decorated interiors, in the heart of one of the most iconic locations on the Planet.
+                    <br>Treat yourself to a visit to Italy without leaving London, and look no further than Ristorante Granaio.</p>
 		            	</div>
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            </td>
+		          </tr><!-- end: tr -->
+              <tr>
+		            <td class="bg_light email-section" style="text-align:center;">
+		            	<table>
 		            		<tr>
-                      <td valign="top" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td style="padding-top: 20px; padding-right: 10px;">
-                              <a href="#"><img src="images/work-1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                              <div class="text-project" style="text-align: center;">
-                              	<h3><a href="#">Work name</a></h3>
-                              	<span>Printing</span>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="padding-top: 20px; padding-right: 10px;">
-                              <a href="#"><img src="images/work-2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                              <div class="text-project" style="text-align: center;">
-                              	<h3><a href="#">Work name</a></h3>
-                              	<span>Printing</span>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="padding-top: 20px; padding-right: 10px;">
-                              <a href="#"><img src="images/work-3.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                              <div class="text-project" style="text-align: center;">
-                              	<h3><a href="#">Work</a></h3>
-                              	<span>Printing</span>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="padding-top: 20px; padding-right: 10px;">
-                              <a href="#"><img src="images/work-4.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                              <div class="text-project" style="text-align: center;">
-                              	<h3><a href="#">Work</a></h3>
-                              	<span>Printing</span>
-                              </div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-
-
-
-                      <td valign="top" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td style="padding-top: 20px; padding-left: 10px;">
-                              <a href="#"><img src="images/work-5.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                              <div class="text-project" style="text-align: center;">
-                              	<h3><a href="#">Work name</a></h3>
-                              	<span>Branding</span>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="padding-top: 20px; padding-left: 10px;">
-                              <a href="#"><img src="images/work-6.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                              <div class="text-project" style="text-align: center;">
-                              	<h3><a href="#">Work name</a></h3>
-                              	<span>Branding</span>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="padding-top: 20px; padding-left: 10px;">
-                              <a href="#"><img src="images/work-7.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                              <div class="text-project" style="text-align: center;">
-                              	<h3><a href="#">Work name</a></h3>
-                              	<span>Branding</span>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="padding-top: 20px; padding-left: 10px;">
-                              <a href="#"><img src="images/work-8.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                              <div class="text-project" style="text-align: center;">
-                              	<h3><a href="#">Work name</a></h3>
-                              	<span>Branding</span>
-                              </div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
+		            			<td class="img">
+		            				<table>
+		            					<tr>
+		            						<td>
+		            							<img src="http://therainforestcafe.co.uk/wp-content/uploads/2019/04/FireplaceRoom.jpg" width="600" height="" alt="fireplace_room" border="0" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;" class="g-img">
+		            						</td>
+		            					</tr>
+		            				</table>
+		            				<div class="icon">
+			            				<a href="#">
+		                        <!-- <img src="images/002-play-button.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;"> -->
+		                      </a>
+	                      </div>
+		            			</td>
+		            		</tr>
+		            		<tr>
+                      <td class="bg_white email-section">
+      		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
+      		            		<span class="subheading">Location</span>
+      		              	<h2>Love at first sight</h2>
+      		              	<p>Granaio is located in Piccadilly Circus in the iconic Criterion Building, right in front of the Eros statue.
+                          <br>Inside you will find a rustic Italian style that convey the sense of a lived past and is displayed in the elements of tables and furniture just as much as in our food.
+                          <br>Elegant, chic, stylish, and yet relaxed and welcoming, in an atmosphere that reflects the Mediterranean countryside.</p>
+      		            	</div>
+		            			</td>
+		            		</tr>
 		            	</table>
 		            </td>
 		          </tr><!-- end: tr -->
+		          <tr>
+		            <td class="bg_light email-section" style="text-align:center;">
+		            	<table>
+		            		<tr>
+		            			<td class="img">
+		            				<table>
+		            					<tr>
+		            						<td>
+		            							<img src="http://therainforestcafe.co.uk/wp-content/uploads/2019/04/IMG_9143-Modifica.jpg" width="" height="" alt="pasta" border="0" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;" class="g-img">
+		            						</td>
+		            					</tr>
+		            				</table>
+		            				<div class="icon">
+			            				<a href="#">
+		                        <!-- <img src="images/002-play-button.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;"> -->
+		                      </a>
+	                      </div>
+		            			</td>
+		            		</tr>
+		            		<tr>
+                      <td class="bg_white email-section">
+      		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
+      		            		<span class="subheading">Menu</span>
+      		              	<h2>Truly Italian Food</h2>
+      		              	<p>We are an Italian Company and we make of the traditional and regional Italian cuisine one of our core values.<br>
+                          To do this, we looked at the world's largest cooking expert: grandmothers!<br>
+                          Because when it comes to food and choices at the dinner table, we preferred the classic recipes of a tradition rich in history and taste: those of grandmother.<br>
+                          The perfect menu? It Always includes lasagna, risotto, the Parmigiana and meat dishes, adapted in all regions, to represent the model of Grandma's kitchen.</p>
+      		            	</div>
+		            			</td>
+		            		</tr>
+		            	</table>
+		            </td>
+		          </tr><!-- end: tr -->
+              <tr>
+		            <td class="bg_light email-section" style="text-align:center;">
+		            	<table>
+		            		<tr>
+		            			<td class="img">
+		            				<table>
+		            					<tr>
+		            						<td>
+		            							<img src="http://therainforestcafe.co.uk/wp-content/uploads/2019/04/IMG_9546.jpg" width="" height="" alt="platter" border="0" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;" class="g-img">
+		            						</td>
+		            					</tr>
+		            				</table>
+		            				<div class="icon">
+			            				<a href="#">
+		                        <!-- <img src="images/002-play-button.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;"> -->
+		                      </a>
+	                      </div>
+		            			</td>
+		            		</tr>
+		            		<tr>
+                      <td class="bg_white email-section">
+      		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
+      		            		<span class="subheading">Groups</span>
+      		              	<h2>Experience Italy</h2>
+      		              	<p>Get in touch with our dedicated sales team today to discuss your requirements!<br>
+                          Our restaurant can welcome up to 60 seated guests for a truly unforgettable Italian experience. Choose one of our group menus, or have one tailor-suited for your needs.
+                          <br>And if you are thinking of a standing reception, we can accommodate up to 80 guests for a larger, yet still intimate and lavish party.</p>
+      		            	</div>
+		            			</td>
+		            		</tr>
+		            	</table>
+		            </td>
+		          </tr><!-- end: tr -->
+
 
 		        </table>
 
 		      </td>
 		    </tr><!-- end:tr -->
       <!-- 1 Column Text + Button : END -->
-      </table>
-      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-      	<tr>
-          <td valign="middle" class="bg_black footer email-section">
-            <table>
-            	<tr>
-                <td valign="top" width="33.333%" style="padding-top: 20px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-right: 10px;">
-                      	<h3 class="heading">About</h3>
-                      	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td valign="top" width="33.333%" style="padding-top: 20px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-left: 5px; padding-right: 5px;">
-                      	<h3 class="heading">Contact Info</h3>
-                      	<ul>
-					                <li><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-					                <li><span class="text">+2 392 3929 210</span></a></li>
-					              </ul>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td valign="top" width="33.333%" style="padding-top: 20px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-left: 10px;">
-                      	<h3 class="heading">Useful Links</h3>
-                      	<ul>
-					                <li><a href="#">Home</a></li>
-					                <li><a href="#">About</a></li>
-					                <li><a href="#">Services</a></li>
-					                <li><a href="#">Work</a></li>
-					              </ul>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr><!-- end: tr -->
-        <tr>
-        	<td valign="middle" class="bg_black footer email-section">
-        		<table>
-            	<tr>
-                <td valign="top" width="33.333%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-right: 10px;">
-                      	<p>&copy; 2018 Agency. All Rights Reserved</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td valign="top" width="33.333%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: right; padding-left: 5px; padding-right: 5px;">
-                      	<p><a href="#" style="color: rgba(255,255,255,.4);">Unsubcribe</a></p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-        	</td>
-        </tr>
-      </table>
+    </table>
+    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+      <tr>
+        <td valign="middle" class="bg_brown footer email-section">
+          <table>
+            <tr>
+              <td valign="top" width="33.333%" style="padding-top: 20px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="text-align: center; padding-right: 10px;">
+                      <h3 class="heading">Get in touch</h3>
+                      <p>For more information on our menus and availability, please email us on <a href="mailto:info@ristorantegranaio.co.uk">info@ristorantegranaio.co.uk</a><br><a href="mailto:reservation@ristorantegranaio.co.uk">reservation@ristorantegranaio.co.uk</a></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td valign="top" width="33.333%" style="padding-top: 20px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="text-align: center; padding-left: 5px; padding-right: 5px;">
+                      <h3 class="heading">Venue Info</h3>
+                      <ul>
+                        <li><span class="text">224 Piccadilly<br>Piccadilly Circus<br>London W1J 9HP<br>0207 930 1459</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </td>
 
-    </div>
-  </center>
+            </tr>
+          </table>
+        </td>
+      </tr><!-- end: tr -->
+      <tr>
+        <td valign="middle" class="bg_black footer email-section">
+          <table>
+            <tr>
+              <td style="text-align: center; valign="top" width="100.00%;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="text-align: center; padding-right: 10px;">
+                      <p>	You have received this e-mail because you opted in to get deals, offers and information from selected companies that work with Group Leisure & Travel magazine. If you'd rather not receive these type of e-mails you can update your preferences or unsubscribe here. <br> To see our full privacy policy click <a href="https://www.yandellmedia.com/privacy-policy/">here</a>. Should you wish to contact us about your data and what we send you, please telephone our circulation and subscriptions department on 01908 613323 or e-mail <a href="subs@yandellmedia.com">subs@yandellmedia.com</a>. <br> <br>Yandell Publishing Ltd, PO Box 5122, Milton Keynes MK15 8ZP. <br>Registered No. 1975794.</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td valign="top" width="33.333%">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+</center>
 </body>
 </html>
